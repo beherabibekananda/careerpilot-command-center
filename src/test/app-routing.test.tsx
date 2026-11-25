@@ -3,6 +3,7 @@ import { createRouter, rootRouteId } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
 import { routeTree } from "@/routeTree.gen";
+import { navigationGroups } from "@/lib/careerpilot-data";
 
 // Match routes without running loaders or rendering: loaders may need a server or
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
@@ -13,5 +14,14 @@ describe("App routing", () => {
     const matches = router.matchRoutes("/");
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
+  });
+
+  it("matches every workspace navigation destination", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    const destinations = navigationGroups.flatMap((group) => group.items.map((item) => item.to));
+
+    for (const destination of destinations) {
+      expect(router.matchRoutes(destination).at(-1)?.routeId, destination).not.toBe(rootRouteId);
+    }
   });
 });

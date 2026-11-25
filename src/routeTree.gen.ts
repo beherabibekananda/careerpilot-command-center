@@ -10,33 +10,258 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AgentActivityRouteImport } from './routes/agent-activity'
+import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as ApplicationsRouteImport } from './routes/applications'
+import { Route as CareerInsightsRouteImport } from './routes/career-insights'
+import { Route as CommunicationsRouteImport } from './routes/communications'
+import { Route as CoverLettersRouteImport } from './routes/cover-letters'
+import { Route as IntegrationsRouteImport } from './routes/integrations'
+import { Route as InterviewsRouteImport } from './routes/interviews'
+import { Route as JobDiscoveryRouteImport } from './routes/job-discovery'
+import { Route as ManualActionsRouteImport } from './routes/manual-actions'
+import { Route as MissionControlRouteImport } from './routes/mission-control'
+import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as ResumeStudioRouteImport } from './routes/resume-studio'
+import { Route as SecurityRouteImport } from './routes/security'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as SourceExplorerRouteImport } from './routes/source-explorer'
+import { Route as UsageRouteImport } from './routes/usage'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AgentActivityRoute = AgentActivityRouteImport.update({
+  id: '/agent-activity',
+  path: '/agent-activity',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsRoute = AnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApplicationsRoute = ApplicationsRouteImport.update({
+  id: '/applications',
+  path: '/applications',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareerInsightsRoute = CareerInsightsRouteImport.update({
+  id: '/career-insights',
+  path: '/career-insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunicationsRoute = CommunicationsRouteImport.update({
+  id: '/communications',
+  path: '/communications',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoverLettersRoute = CoverLettersRouteImport.update({
+  id: '/cover-letters',
+  path: '/cover-letters',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IntegrationsRoute = IntegrationsRouteImport.update({
+  id: '/integrations',
+  path: '/integrations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InterviewsRoute = InterviewsRouteImport.update({
+  id: '/interviews',
+  path: '/interviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JobDiscoveryRoute = JobDiscoveryRouteImport.update({
+  id: '/job-discovery',
+  path: '/job-discovery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManualActionsRoute = ManualActionsRouteImport.update({
+  id: '/manual-actions',
+  path: '/manual-actions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MissionControlRoute = MissionControlRouteImport.update({
+  id: '/mission-control',
+  path: '/mission-control',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingRoute = OnboardingRouteImport.update({
+  id: '/onboarding',
+  path: '/onboarding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResumeStudioRoute = ResumeStudioRouteImport.update({
+  id: '/resume-studio',
+  path: '/resume-studio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityRoute = SecurityRouteImport.update({
+  id: '/security',
+  path: '/security',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SourceExplorerRoute = SourceExplorerRouteImport.update({
+  id: '/source-explorer',
+  path: '/source-explorer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UsageRoute = UsageRouteImport.update({
+  id: '/usage',
+  path: '/usage',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/agent-activity': typeof AgentActivityRoute
+  '/analytics': typeof AnalyticsRoute
+  '/applications': typeof ApplicationsRoute
+  '/career-insights': typeof CareerInsightsRoute
+  '/communications': typeof CommunicationsRoute
+  '/cover-letters': typeof CoverLettersRoute
+  '/integrations': typeof IntegrationsRoute
+  '/interviews': typeof InterviewsRoute
+  '/job-discovery': typeof JobDiscoveryRoute
+  '/manual-actions': typeof ManualActionsRoute
+  '/mission-control': typeof MissionControlRoute
+  '/onboarding': typeof OnboardingRoute
+  '/resume-studio': typeof ResumeStudioRoute
+  '/security': typeof SecurityRoute
+  '/settings': typeof SettingsRoute
+  '/source-explorer': typeof SourceExplorerRoute
+  '/usage': typeof UsageRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/agent-activity': typeof AgentActivityRoute
+  '/analytics': typeof AnalyticsRoute
+  '/applications': typeof ApplicationsRoute
+  '/career-insights': typeof CareerInsightsRoute
+  '/communications': typeof CommunicationsRoute
+  '/cover-letters': typeof CoverLettersRoute
+  '/integrations': typeof IntegrationsRoute
+  '/interviews': typeof InterviewsRoute
+  '/job-discovery': typeof JobDiscoveryRoute
+  '/manual-actions': typeof ManualActionsRoute
+  '/mission-control': typeof MissionControlRoute
+  '/onboarding': typeof OnboardingRoute
+  '/resume-studio': typeof ResumeStudioRoute
+  '/security': typeof SecurityRoute
+  '/settings': typeof SettingsRoute
+  '/source-explorer': typeof SourceExplorerRoute
+  '/usage': typeof UsageRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/agent-activity': typeof AgentActivityRoute
+  '/analytics': typeof AnalyticsRoute
+  '/applications': typeof ApplicationsRoute
+  '/career-insights': typeof CareerInsightsRoute
+  '/communications': typeof CommunicationsRoute
+  '/cover-letters': typeof CoverLettersRoute
+  '/integrations': typeof IntegrationsRoute
+  '/interviews': typeof InterviewsRoute
+  '/job-discovery': typeof JobDiscoveryRoute
+  '/manual-actions': typeof ManualActionsRoute
+  '/mission-control': typeof MissionControlRoute
+  '/onboarding': typeof OnboardingRoute
+  '/resume-studio': typeof ResumeStudioRoute
+  '/security': typeof SecurityRoute
+  '/settings': typeof SettingsRoute
+  '/source-explorer': typeof SourceExplorerRoute
+  '/usage': typeof UsageRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/agent-activity'
+    | '/analytics'
+    | '/applications'
+    | '/career-insights'
+    | '/communications'
+    | '/cover-letters'
+    | '/integrations'
+    | '/interviews'
+    | '/job-discovery'
+    | '/manual-actions'
+    | '/mission-control'
+    | '/onboarding'
+    | '/resume-studio'
+    | '/security'
+    | '/settings'
+    | '/source-explorer'
+    | '/usage'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/agent-activity'
+    | '/analytics'
+    | '/applications'
+    | '/career-insights'
+    | '/communications'
+    | '/cover-letters'
+    | '/integrations'
+    | '/interviews'
+    | '/job-discovery'
+    | '/manual-actions'
+    | '/mission-control'
+    | '/onboarding'
+    | '/resume-studio'
+    | '/security'
+    | '/settings'
+    | '/source-explorer'
+    | '/usage'
+  id:
+    | '__root__'
+    | '/'
+    | '/agent-activity'
+    | '/analytics'
+    | '/applications'
+    | '/career-insights'
+    | '/communications'
+    | '/cover-letters'
+    | '/integrations'
+    | '/interviews'
+    | '/job-discovery'
+    | '/manual-actions'
+    | '/mission-control'
+    | '/onboarding'
+    | '/resume-studio'
+    | '/security'
+    | '/settings'
+    | '/source-explorer'
+    | '/usage'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AgentActivityRoute: typeof AgentActivityRoute
+  AnalyticsRoute: typeof AnalyticsRoute
+  ApplicationsRoute: typeof ApplicationsRoute
+  CareerInsightsRoute: typeof CareerInsightsRoute
+  CommunicationsRoute: typeof CommunicationsRoute
+  CoverLettersRoute: typeof CoverLettersRoute
+  IntegrationsRoute: typeof IntegrationsRoute
+  InterviewsRoute: typeof InterviewsRoute
+  JobDiscoveryRoute: typeof JobDiscoveryRoute
+  ManualActionsRoute: typeof ManualActionsRoute
+  MissionControlRoute: typeof MissionControlRoute
+  OnboardingRoute: typeof OnboardingRoute
+  ResumeStudioRoute: typeof ResumeStudioRoute
+  SecurityRoute: typeof SecurityRoute
+  SettingsRoute: typeof SettingsRoute
+  SourceExplorerRoute: typeof SourceExplorerRoute
+  UsageRoute: typeof UsageRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +273,147 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/agent-activity': {
+      id: '/agent-activity'
+      path: '/agent-activity'
+      fullPath: '/agent-activity'
+      preLoaderRoute: typeof AgentActivityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics': {
+      id: '/analytics'
+      path: '/analytics'
+      fullPath: '/analytics'
+      preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/applications': {
+      id: '/applications'
+      path: '/applications'
+      fullPath: '/applications'
+      preLoaderRoute: typeof ApplicationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/career-insights': {
+      id: '/career-insights'
+      path: '/career-insights'
+      fullPath: '/career-insights'
+      preLoaderRoute: typeof CareerInsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communications': {
+      id: '/communications'
+      path: '/communications'
+      fullPath: '/communications'
+      preLoaderRoute: typeof CommunicationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cover-letters': {
+      id: '/cover-letters'
+      path: '/cover-letters'
+      fullPath: '/cover-letters'
+      preLoaderRoute: typeof CoverLettersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/integrations': {
+      id: '/integrations'
+      path: '/integrations'
+      fullPath: '/integrations'
+      preLoaderRoute: typeof IntegrationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/interviews': {
+      id: '/interviews'
+      path: '/interviews'
+      fullPath: '/interviews'
+      preLoaderRoute: typeof InterviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/job-discovery': {
+      id: '/job-discovery'
+      path: '/job-discovery'
+      fullPath: '/job-discovery'
+      preLoaderRoute: typeof JobDiscoveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manual-actions': {
+      id: '/manual-actions'
+      path: '/manual-actions'
+      fullPath: '/manual-actions'
+      preLoaderRoute: typeof ManualActionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mission-control': {
+      id: '/mission-control'
+      path: '/mission-control'
+      fullPath: '/mission-control'
+      preLoaderRoute: typeof MissionControlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding': {
+      id: '/onboarding'
+      path: '/onboarding'
+      fullPath: '/onboarding'
+      preLoaderRoute: typeof OnboardingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resume-studio': {
+      id: '/resume-studio'
+      path: '/resume-studio'
+      fullPath: '/resume-studio'
+      preLoaderRoute: typeof ResumeStudioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security': {
+      id: '/security'
+      path: '/security'
+      fullPath: '/security'
+      preLoaderRoute: typeof SecurityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/source-explorer': {
+      id: '/source-explorer'
+      path: '/source-explorer'
+      fullPath: '/source-explorer'
+      preLoaderRoute: typeof SourceExplorerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/usage': {
+      id: '/usage'
+      path: '/usage'
+      fullPath: '/usage'
+      preLoaderRoute: typeof UsageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AgentActivityRoute: AgentActivityRoute,
+  AnalyticsRoute: AnalyticsRoute,
+  ApplicationsRoute: ApplicationsRoute,
+  CareerInsightsRoute: CareerInsightsRoute,
+  CommunicationsRoute: CommunicationsRoute,
+  CoverLettersRoute: CoverLettersRoute,
+  IntegrationsRoute: IntegrationsRoute,
+  InterviewsRoute: InterviewsRoute,
+  JobDiscoveryRoute: JobDiscoveryRoute,
+  ManualActionsRoute: ManualActionsRoute,
+  MissionControlRoute: MissionControlRoute,
+  OnboardingRoute: OnboardingRoute,
+  ResumeStudioRoute: ResumeStudioRoute,
+  SecurityRoute: SecurityRoute,
+  SettingsRoute: SettingsRoute,
+  SourceExplorerRoute: SourceExplorerRoute,
+  UsageRoute: UsageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

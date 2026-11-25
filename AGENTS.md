@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+- Keep the app on TanStack Start with its generated file-based routes; the hosted Lovable runtime does not support replacing it with Next.js.

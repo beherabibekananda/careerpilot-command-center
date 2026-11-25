@@ -1,29 +1,28 @@
-# Welcome to your Lovable project
+# CareerPilot AI
 
-This project was built with [Lovable](https://lovable.dev).
+Your Career. Our Intelligence. Always Applying.
 
-## Build with Lovable
+CareerPilot AI is a career automation command-centre interface built on the repository’s TanStack Start stack. The current workspace is a disconnected product preview: sample records are labeled, and actions that require a backend do not claim success.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Run locally
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
 
-## Built with
+The preview is available at `http://localhost:8080` in the Lovable development environment. Use the navigation to explore overview, Mission Control, Source Explorer, Job Discovery, applications, manual actions, Resume Studio, cover letters, communications, interviews, analytics, career insights, security, integrations, usage, settings, and onboarding.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Backend integration status
+
+The requested FastAPI service, API base URL, OpenAPI schema, authentication flow, and event-stream contract were not included in the repository. No backend calls, authentication, file uploads, background workers, email delivery, application submissions, or live operational status are implemented. A website address can be validated locally, but no website is contacted. The emergency-stop control explains that no stop request was sent.
+
+Supply the existing OpenAPI document and deployment connection details before wiring the API. Keep the service as the source of truth; do not infer undocumented endpoints. A discovered website must not be treated as authorized for monitoring or application submission. Automatic submission must remain off until explicit user authorization and platform permission are confirmed.
+
+## Verification
+
+```sh
+bunx vitest run
+```
+
+The current checks cover route availability and application-submission authorization guards. Backend integration, real user authentication, uploads, background jobs, event reconnection, and end-to-end application lifecycle remain unverified because no backend contract is connected.
